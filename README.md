@@ -39,7 +39,7 @@ You could also edit files directly in the github.com editor like a fucking noob,
 All of text is markdown. Use [**Markdown refrence**](https://kramdown.gettalong.org/quickref.html).
 `.html` and `.md` files don't use tabs, just two spaces. It will break everything. All of the photos I downloaded off your Blogspot have to be addressed with an all caps `.JPG`. idk
 - make a post take up the full screen width by adding `classes: wide` to the front matter of the page. (in the top --- portion)
-- If you want to remove the teaser photos from the Posts page, open the file `_includes/head/custom.html`. On line 15, change `or` to `and`. Example for no teaser image: `{% if include.type == "grid" and teaser %}`
+- If you want to remove the teaser photos from the Posts page, open the file `_includes/head/custom.html`. On line 15, change `or` to `and`. Example for no teaser image: `{% if include.type == "grid" and teaser %}` don't mess up the indentation.
 
 - `_config.yml` sets global site variables
 - `index.html` is homepage settings
