@@ -21,9 +21,9 @@ Contains basic configuration to get you a site with:
 - Clone this repository: `git clone https://github.com/jamessutton1/jamessutton1.github.io.git`
 - Customize files with markdown as needed!
 - Update website with following git commands (Run these from the `~/Desktop/GitWebsite/jamessutton1.github.io` folder __the root directory of the repository__)
-- `git add --all`
-- `git commit -m "some comment"`
-- `git push -u origin master`
+- `git add --all` This adds __every__ altered file to the *staging enviroment*. replace the `--all` with file names for selective uploading. 
+- `git commit -m "some comment"` This command saves everything in the staging enviroment to your __Local__ repository (only on your CPU). One reason this is necessary is for changing [branches](https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches)
+- `git push -u origin master` This command sends your local repository (including the commited changes) to the main repository. You will now be able to see these changes on GitHub
 - Your domain, [**jamessutton1.github.io**](https://jamessutton1.github.io/) should be ready in a minute!
 
 You could also edit files directly in the github.com editor like a fucking noob, which requires no setup.
