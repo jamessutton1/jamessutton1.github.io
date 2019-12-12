@@ -38,12 +38,16 @@ You could also edit files directly in the github.com editor like a fucking noob,
 
 All of text is markdown. Use [**Markdown refrence**](https://kramdown.gettalong.org/quickref.html).
 `.html` and `.md` files don't use tabs, just two spaces. It will break everything. All of the photos I downloaded off your Blogspot have to be addressed with an all caps `.JPG`. idk
+- make a post take up the full screen width by adding `classes: wide` to the front matter of the page. (in the top --- portion)
+- If you want to remove the teaser photos from the Posts page, open the file `_includes/head/custom.html`. On line 15, change `or` to `and`. Example for no teaser image: `{% if include.type == "grid" and teaser %}`
+
 - `_config.yml` sets global site variables
 - `index.html` is homepage settings
 - `_pages/about.md` is about page settings
 - `_posts` contains all posts. The date in file name sets the post's "post date." You can add subfolders to this folder for organization.
 - All images go in `/assets/images/`. Try to keep image size under 2 MB for quick loading. You can also link images. See [post examples](https://github.com/mmistakes/minimal-mistakes/tree/master/docs/_posts). When viewing `.md` files in GitHub, click the __Raw__ button to view it as plaintext code. 
 - If you can't figure out how to format a type of post, visit [**Here**](https://mmistakes.github.io/minimal-mistakes/year-archive/) for examples (this site is the domain of the documentation being refrenced). Note the final portion of the URL of the post of intrest. Find this name in [this section](https://github.com/mmistakes/minimal-mistakes/tree/master/docs/_posts) of the documentation.
+
 - I added a site icon that appears in the tab on mobile and desktop. If you want to change these, delete all of the image files in the root folder. Create a new image set [Here](https://favicon.io/). Extract the download and copy the photos to the root website directory.
 - Delete everything and paste the html code snippet given by the Favicon generator into this file `/_includes/custom.html`. Mine was
 
